@@ -1,5 +1,19 @@
-//Made by Lucas Vinyard
-
+/* To draw Circles Made by Lucas Vinyard
+ * 
+ *  Current files: ui.cs, driver.cs, circlealgorthms.cs
+ *
+ *  Project state: Fully functional
+ *  
+ *  Notes: The circle radi of 200, 400, and 600 did not fit on form
+ *          so, I had to change the scale by 1/2. The current radi 
+ *          implemented are 100, 200, and 300.
+ *  
+ *  To compile: Use the build script included, build.sh , which takes advantage of the Mono compiler. 
+ *              Using the Command Prompt, Chnage directory to where code is stored and run the build.sh
+ *  
+ *  Specifics: This file holds most of the code, which handles the ui of the program.
+ *
+ */
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -142,7 +156,7 @@ public class Program: Form {
             twoButton.Location = new Point(10,20);
             twoButton.Font = new Font("Arial", 10, FontStyle.Bold);
             twoButton.ForeColor = Color.White;
-            twoButton.Text="200";
+            twoButton.Text="100";
             twoButton.BackColor = Color.Black;
             twoButton.Click += new EventHandler(Rad200);
 			
@@ -154,7 +168,7 @@ public class Program: Form {
             fourButton.Location = new Point(10,45);
             fourButton.Font = new Font("Arial", 10, FontStyle.Bold);
             fourButton.ForeColor = Color.White;
-            fourButton.Text="400";
+            fourButton.Text="200";
             fourButton.BackColor = Color.Black;
             fourButton.Click += new EventHandler(Rad400);
 
@@ -166,7 +180,7 @@ public class Program: Form {
             sixButton.Location = new Point(10,70);
             sixButton.Font = new Font("Arial", 10, FontStyle.Bold);
 			sixButton.ForeColor = Color.White;
-            sixButton.Text="600";
+            sixButton.Text="300";
             sixButton.BackColor = Color.Black;
             sixButton.Click += new EventHandler(Rad600);
 
