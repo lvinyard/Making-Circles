@@ -254,13 +254,9 @@ public class Program: Form {
     this.MaximizeBox = false;
 
 
-    this.AutoScroll = true;
-        
-
-
         //Making title 
         Label nameLabel = new Label();
-	nameLabel.Text = "To draw Circles by Lucas Vinyard";
+	nameLabel.Text = "To Draw Circles by Lucas Vinyard";
         nameLabel.AutoSize = false;
     nameLabel.TextAlign = ContentAlignment.MiddleCenter;
         nameLabel.Font = arial;
