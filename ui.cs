@@ -9,9 +9,9 @@ public class Program: Form {
 
 //Making font for Name and Project name
 	private Font arial = new Font("Arial", 24, FontStyle.Bold);
-	
-//Making Pens 
-	 Pen blackPen = new Pen(Color.Black);
+
+    //Making Pens 
+    Pen blackPen = new Pen(Color.Black);
 	 Pen circlePen = new Pen(Color.Gray);
 
 //Circle Variables
@@ -240,7 +240,11 @@ public class Program: Form {
     this.MaximizeBox = false;
 
 
- //Making title 
+    this.AutoScroll = true;
+        
+
+
+        //Making title 
         Label nameLabel = new Label();
 	nameLabel.Text = "To draw Circles by Lucas Vinyard";
         nameLabel.AutoSize = false;
